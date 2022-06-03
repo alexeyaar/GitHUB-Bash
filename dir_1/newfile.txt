@@ -1,2 +1,0 @@
-tf_2.txt
-tf_3.txt
