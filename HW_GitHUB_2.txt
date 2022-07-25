@@ -1,0 +1,282 @@
+JSON
+ 4. Создать внешний репозиторий c названием JSON.
+
+ 5. Клонировать репозиторий JSON на локальный компьютер. 
+git clone https://github.com/alexeyaar/JSON.git
+
+ 6. Внутри локального JSON создать файл “new.json”.
+touch new.json
+ 7. Добавить файл под гит.
+git add .
+ 8. Закоммитить файл.
+git commit -m "new json file"
+
+ 9. Отправить файл на внешний GitHub репозиторий.
+git push 
+
+ 10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+vim new.json 
+{
+        "person":{
+                "name":"Alexey",
+		"surname":"Artemov",
+		"patronymic":"Anatolievich",
+                "age":27,
+                "animals":0,
+                "salary":"$3000000"
+        }
+}
+
+ 11. Отправить изменения на внешний репозиторий.
+1)git add .
+2)git commit -m "new nif for me"
+3)git push
+ 
+ 12. Создать файл preferences.json
+touch preferences.json
+ 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.
+{
+	"preferences": {
+		"favoriteFilm": "Forrest_Gump",
+		"favoriteSerial": "lupine",
+		"favoriteFood": "meat",
+		"favoriteSeason": "summer",
+		"country": "Canada"
+	}
+}
+ 
+14. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
+touch sklls.json
+vim skills.json
+{
+        "skills":{
+                "hardSkills":{
+                        "hard0":"JSON",
+                        "hard1":"API",
+                        "hard2":"DevTools",
+                        "hard3":"VPN",
+                        "hard4":"GIT",
+                        "hard5":"SQL"
+                }
+        },
+                "softSkills":{
+                        "soft0":"sociability",
+                        "soft1":"creativity",
+                        "soft2":"punctuality",
+                        "soft3":"equilibrium",
+                        "soft4":"adaptability",
+                        "soft5":"collaboration"
+                }
+}
+
+
+ 15. Отправить сразу 2 файла на внешний репозиторий.
+1) git add preferences.json skills.json
+2) git commit -m "new info"
+3) git push
+
+ 16. На веб интерфейсе создать файл bug_report.json.
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+{
+	"bugReport": {
+		"summary": "When adding products to a set with special characters in the amount, status code 500 Internal server error.",
+		"preconditions": "1.Start server",
+		"steps1": "Send a PUT request to the endpoint: api/v1/kits/5/products",
+		"steps2": "Specify in the body of the request",
+		"steps2.1": {
+			"id": 1,
+			"quantity": "one"
+		},
+		"Expected Result": "400 Bad Request response code.Items not added to cart",
+		"Actual result": "Response code 500 Internal Server Error"
+	}
+}
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+
+ 20. Синхронизировать внешний и локальный репозиторий JSON
+git pull
+
+
+XML
+ 21. Создать внешний репозиторий c названием XML.
+
+ 22. Клонировать репозиторий XML на локальный компьютер.
+git clone https://github.com/alexeyaar/XML.git
+
+ 23. Внутри локального XML создать файл “new.xml”.
+touch new.xml
+
+ 24. Добавить файл под гит.
+git add new.xml
+
+ 25. Закоммитить файл.
+git commit -m "new xml file"
+
+ 26. Отправить файл на внешний GitHub репозиторий.
+git push
+
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+vim new.xml
+<person>
+	<name>Alexey</name>
+	<surname>Artemov</surname>
+	<patronymic>Anatolievich</patronymic>
+	<age>27</age>
+	<animals>0</animals>
+	<salary>$3000000</salary>
+</person>
+ 28. Отправить изменения на внешний репозиторий.
+1) git add new.xml
+2) git commit -m "modified xml"
+3) git push
+
+ 29. Создать файл preferences.xml
+touch preferences.xml
+
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
+vim preferences.xml
+<preferences>
+        <favoriteMovie>Forrest Gump</favoriteMovie>
+        <TVSeries>Lupin</TVSeries>
+        <favoriteFood>Meat</favoriteFood>
+        <favoriteSeason>summer</favoriteSeason>
+        <country>Canada</country>
+</preferences>
+
+ 31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+touch sklls.xml 
+vim sklls.xml 
+<skills>
+        <hardSkills>
+                <hard>json</hard>
+                <hard1>api</hard1>
+                <hard2>devtools</hard2>
+                <hard3>vpn</hard3>
+                <hard4>git</hard4>
+                <hard5>sql</hard5>
+        </hardSkills>
+
+        <softSkills>
+                <soft>sociability</soft>
+                <soft1>creativity</soft1>
+                <soft2>punctuality</soft2>
+                <soft3>equilibrium</soft3>
+                <soft4>adaptability</soft4>
+                <soft5>collaboration</soft5>
+        </softSkills>
+</skills>
+
+ 32. Сделать коммит в одну строку.
+
+ 33. Отправить сразу 2 файла на внешний репозиторий.
+git add sklls.xml preferences.xml
+git commit -m "new2"
+git push
+
+ 34. На веб интерфейсе создать файл bug_report.xml.
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+<bugreport>
+  <summary>When adding products to a set with special characters in the amount, status code 500 Internal server error.</summary>
+  <preconditions>1.Start server</preconditions>
+  <steps1>Send a PUT request to the endpoint: api/v1/kits/5/products</steps1>
+  <steps2>Specify in the body of the request</steps2>
+	<steps2.1> 
+    <id>1</id>
+    <quantity>one</quantity>
+	</steps2.1>
+	<Expected_reslt>400 Bad Request response code.Items not added to cart</Expected_reslt>
+  <Actual_reslt>Response code 500 Internal Server Error</Actual_reslt>
+</bugreport>
+
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 38. Синхронизировать внешний и локальный репозиторий XML
+git pull
+TXT
+ 1. Создать внешний репозиторий c названием TXT.
+
+ 2. Клонировать репозиторий TXT на локальный компьютер.
+git clone https://github.com/alexeyaar/TXT.git
+
+ 3. Внутри локального TXT создать файл “new.txt”.
+touch new.txt
+
+ 4. Добавить файл под гит.
+git add new.txt
+
+ 5. Закоммитить файл.
+git commit -m "my text file"
+
+ 6. Отправить файл на внешний GitHub репозиторий.
+git push
+
+ 7. Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT.
+vim new.txt
+name:Alexey
+surname:Artemov
+patronymic:Anatolievich
+age:27
+animals:0
+salary:$3000000
+
+ 8. Отправить изменения на внешний репозиторий.
+git add
+git commit -m "txt mod"
+git push
+
+ 9. Создать файл preferences.txt
+touch preferences.txt
+
+ 10. В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT.
+vim preferences.txt  
+favorite movie: Forrest Gump
+TVSeries: Lupin
+Favorite food: Meat
+Favorite season: summer
+country: Canada
+
+ 11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT
+ touch sklls.txt
+ vim sklls.txt
+ Hard skills:
+-json;
+-api;
+-devtools;
+-vpn;
+-git;
+sql;
+Soft skills:
+-sociability;
+-creativity;
+-punctuality;
+-equilibrium;
+-adaptability;
+-collaboration;
+ 
+12. Сделать коммит в одну строку.
+
+ 13. Отправить сразу 2 файла на внешний репозиторий.
+git add sklls.txt preferences.txt
+git commit -m "mod"
+git push
+
+ 14. На веб интерфейсе создать файл bug_report.txt.
+
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 
+ 16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.
+ 
+summary: When adding products to a set with special characters in the amount, status code 500 Internal server error.
+preconditions: 1.Start server
+steps1: Send a PUT request to the endpoint: api/v1/kits/5/products.
+steps2: Specify in the body of the request.
+    id:1
+    quantity:one
+Expected_reslt: 400 Bad Request response code.Items not added to cart
+Actual_reslt: Response code 500 Internal Server Error
+
+
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 18. Синхронизировать внешний и локальный репозиторий TXT
+git pull
