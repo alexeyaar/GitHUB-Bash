@@ -118,6 +118,7 @@ git push
 
  27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
 vim new.xml
+<?xml version ="1.0" encoding = "UTF-8"?>
 <person>
 	<name>Alexey</name>
 	<surname>Artemov</surname>
@@ -136,6 +137,7 @@ touch preferences.xml
 
  30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
 vim preferences.xml
+<?xml version ="1.0" encoding = "UTF-8"?>
 <preferences>
         <favoriteMovie>Forrest Gump</favoriteMovie>
         <TVSeries>Lupin</TVSeries>
@@ -147,6 +149,7 @@ vim preferences.xml
  31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
 touch sklls.xml 
 vim sklls.xml 
+<?xml version ="1.0" encoding = "UTF-8"?>
 <skills>
         <hardSkills>
                 <hard>json</hard>
@@ -177,6 +180,7 @@ git push
  34. На веб интерфейсе создать файл bug_report.xml.
  35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
  36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+<?xml version ="1.0" encoding = "UTF-8"?>
 <bugreport>
   <summary>When adding products to a set with special characters in the amount, status code 500 Internal server error.</summary>
   <preconditions>1.Start server</preconditions>
